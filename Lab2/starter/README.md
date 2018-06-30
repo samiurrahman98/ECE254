@@ -1,5 +1,3 @@
-Submissions:
-
 starter/RTX_App/Test_spec.txt  
 - Outlines structure of testing tasks in main_task_exp.c.
 - Specifies what values to expect for successful and failed tests.
