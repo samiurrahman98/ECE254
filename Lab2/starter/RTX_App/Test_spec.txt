@@ -1,0 +1,27 @@
+Tasks Test Specification
+
+The test is composed of four main tasks:
+* task1: Fills up the entire memory pool, and then after a short delay, frees up the entire memory pool.
+* task2: Tries to allocate memory after task1 has filled the memory pool, causing it to get blocked until task1 frees memory.
+* task3: Tried to allocate memory after task1 has filled the memory pool and after task2 has been blocked, causing it to also get blocked until task1 frees memory.
+* task_main: Creates the tasks above and injects into them varying combinations of priorities until all possible combinations have been tested. (e.g. first case: task1.prio = 1, task2.prio = 1, task3.prio = 1; second case: task1.prio = 1, task2.prio = 1, task3.prio = 2; third case:..and so on.)
+
+The following test is checking for four main criteria:
+* A task can allocate a fixed size of memory.
+	* This is tested in task1 at line 92, if the allocated box pointer is null in a vacant memory pool, it prints an error.
+* A task will get blocked if there is no memory available.
+	* This is tested in task1 at line 102, if the os_mem_free function returns OS_R_NOK, it prints an error.
+* A blocked task will be resumed once enough memory is available.
+	* This is tested in both task2 and task3 at lines 123 and 139 respectively, where the task prints to indicate it has been unblocked at this point in the execution of the test.
+* When there are multiple blocked tasks, the highest priority task, waiting for the longest is executed first.
+	* Based off the priorites of the three tasks running, the order of output signals from the three tasks will differ. The following outlines test cases and their expected output. Note: blocked task represents either task2.prio or task3.prio
+	* task1.prio = blocked task OR task1.prio < blocked task
+		* While task1 frees memory and dispatches the blocked task, there will be no context switch to the blocked task because it does not have a higher priority than task1. This means blocked task will only resume after task1 finishes.	
+	* task1.prio > blocked task
+		* While task1 frees memory and dispatches the blocked task, there will be a context switch to the blocked task since it is of higher priority. This means while task1 frees memory, there will be a switch and the blocked task will resume and finish, after which task1 will resume freeing memory and finish.
+	* task2.prio = task3.prio
+		* task2 will resume and finish before task3 because it has been waiting for a longer time (since it gets blocked first).
+	* task2.prio > task3.prio
+		* task2 will resume and finish before task3 because it is of higher priority and it has been waiting for a longer time.
+	* task2.prio < task3.prio
+		* task3 will resume and finish before task2 because it is of higher priority.

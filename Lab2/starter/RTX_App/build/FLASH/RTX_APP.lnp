@@ -1,0 +1,5 @@
+--cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\retarget.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\uart_polling.o" ".\build\flash\main_task_exp.o" ".\build\flash\lab2_helper.o" N:\ECE-254\lab2\starter\RTX_CM3\CM3_LE\RTX_CM3.lib 
+--strict --scatter ".\build\FLASH\RTX_APP.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\build\FLASH\lst\RTX_APP.map" -o .\build\FLASH\RTX_APP.axf

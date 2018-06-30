@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections 
+-I c:\Software\Keil\ARM\RV31\INC 
+-I c:\Software\Keil\ARM\CMSIS\Include 
+-I c:\Software\Keil\ARM\Inc\NXP\LPC17xx 
+-DDBG_MSG -o ".\CM3_LE\rt_time.o" --omf_browse ".\CM3_LE\rt_time.crf" --depend ".\CM3_LE\rt_time.d" "SRC\CM\rt_Time.c"

@@ -1,0 +1,26 @@
+*** Creating Trace Output File '.\build\FLASH\HelloWorld.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\build\flash\startup_lpc17xx.o"'
+### List of Objects: adding '".\build\flash\system_lpc17xx.o"'
+### List of Objects: adding '".\build\flash\rtx_conf_cm.o"'
+### List of Objects: adding '".\build\flash\uart_polling.o"'
+### List of Objects: adding '".\build\flash\retarget.o"'
+### List of Objects: adding '".\build\flash\helloworld.o"'
+### List of Objects: adding '"..\RTX_CM3\CM3_LE\RTX_CM3.lib"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\uart_polling.o" ".\build\flash\retarget.o" ".\build\flash\helloworld.o" N:\ECE254\Repo\lab1\starter\Multiproj\RTX_CM3\CM3_LE\RTX_CM3.lib 
+--strict --scatter ".\build\FLASH\HelloWorld.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\build\FLASH\lst\HelloWorld.map" -o .\build\FLASH\HelloWorld.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\build\FLASH\HelloWorld.axf'
+### ADS-LD Command File: '.\build\FLASH\HelloWorld.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\build\FLASH\HelloWorld.lnp', Handle=0x00001CA8
+### Writing '.lnp' file
+### ADS-LD Command file '.\build\FLASH\HelloWorld.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

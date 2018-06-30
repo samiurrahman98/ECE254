@@ -1,0 +1,5 @@
+--cpu Cortex-M3 --li -g --16 --apcs=interwork 
+-I c:\Software\Keil\ARM\RV31\INC 
+-I c:\Software\Keil\ARM\CMSIS\Include 
+-I c:\Software\Keil\ARM\Inc\NXP\LPC17xx 
+-o ".\CM3_LE\SVC_Table.o" --depend ".\CM3_LE\SVC_Table.d" "SRC\CM\SVC_Table.s"

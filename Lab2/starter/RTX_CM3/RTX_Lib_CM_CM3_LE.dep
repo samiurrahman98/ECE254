@@ -1,0 +1,110 @@
+Dependencies for Project 'RTX_Lib_CM', Target 'CM3_LE': (DO NOT MODIFY !)
+F (.\SRC\CM\rt_Task.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_task.o" --omf_browse ".\CM3_LE\rt_task.crf" --depend ".\CM3_LE\rt_task.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_MemBox.h)(0x5B1199BC)
+I (SRC\CM\rt_Robin.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+F (.\SRC\CM\rt_System.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_system.o" --omf_browse ".\CM3_LE\rt_system.crf" --depend ".\CM3_LE\rt_system.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_Event.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_Mailbox.h)(0x5B1199BC)
+I (SRC\CM\rt_Semaphore.h)(0x5B1199BC)
+I (SRC\CM\rt_Time.h)(0x5B1199BC)
+I (SRC\CM\rt_Timer.h)(0x5B1199BC)
+I (SRC\CM\rt_Robin.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Event.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_event.o" --omf_browse ".\CM3_LE\rt_event.crf" --depend ".\CM3_LE\rt_event.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_Event.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+F (.\SRC\CM\rt_List.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_list.o" --omf_browse ".\CM3_LE\rt_list.crf" --depend ".\CM3_LE\rt_list.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_Time.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Mailbox.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_mailbox.o" --omf_browse ".\CM3_LE\rt_mailbox.crf" --depend ".\CM3_LE\rt_mailbox.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_Mailbox.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Semaphore.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_semaphore.o" --omf_browse ".\CM3_LE\rt_semaphore.crf" --depend ".\CM3_LE\rt_semaphore.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_Semaphore.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Time.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_time.o" --omf_browse ".\CM3_LE\rt_time.crf" --depend ".\CM3_LE\rt_time.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_Time.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Timer.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_timer.o" --omf_browse ".\CM3_LE\rt_timer.crf" --depend ".\CM3_LE\rt_timer.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_Timer.h)(0x5B1199BC)
+I (SRC\CM\rt_MemBox.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Mutex.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_mutex.o" --omf_browse ".\CM3_LE\rt_mutex.crf" --depend ".\CM3_LE\rt_mutex.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_Mutex.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Robin.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_robin.o" --omf_browse ".\CM3_LE\rt_robin.crf" --depend ".\CM3_LE\rt_robin.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_Time.h)(0x5B1199BC)
+I (SRC\CM\rt_Robin.h)(0x5B1199BC)
+F (.\SRC\CM\rt_MemBox.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_membox.o" --omf_browse ".\CM3_LE\rt_membox.crf" --depend ".\CM3_LE\rt_membox.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_MemBox.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+F (.\SRC\CM\rt_Task_ext.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_task_ext.o" --omf_browse ".\CM3_LE\rt_task_ext.crf" --depend ".\CM3_LE\rt_task_ext.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_MemBox.h)(0x5B1199BC)
+I (SRC\CM\rt_Robin.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+I (SRC\CM\rt_Task_ext.h)(0x5B1199BC)
+F (.\SRC\CM\rt_MemBox_ext.c)(0x5B16B74D)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\rt_membox_ext.o" --omf_browse ".\CM3_LE\rt_membox_ext.crf" --depend ".\CM3_LE\rt_membox_ext.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_MemBox.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_MemBox_ext.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+F (.\SRC\CM\SVC_Table.s)(0x5B1199BC)(--cpu Cortex-M3 --li -g --16 --apcs=interwork -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -o ".\CM3_LE\SVC_Table.o" --depend ".\CM3_LE\SVC_Table.d")
+F (.\SRC\CM\HAL_CM3.c)(0x5B1199BC)(-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I c:\Software\Keil\ARM\RV31\INC -I c:\Software\Keil\ARM\CMSIS\Include -I c:\Software\Keil\ARM\Inc\NXP\LPC17xx -DDBG_MSG -o ".\CM3_LE\hal_cm3.o" --omf_browse ".\CM3_LE\hal_cm3.crf" --depend ".\CM3_LE\hal_cm3.d")
+I (SRC\CM\rt_TypeDef.h)(0x5B1199BC)
+I (SRC\CM\RTX_Config.h)(0x5B1199BC)
+I (SRC\CM\rt_System.h)(0x5B1199BC)
+I (SRC\CM\rt_HAL_CM.h)(0x5B1199BC)
+I (SRC\CM\rt_Task.h)(0x5B1199BC)
+I (SRC\CM\rt_List.h)(0x5B1199BC)
+I (SRC\CM\rt_MemBox.h)(0x5B1199BC)

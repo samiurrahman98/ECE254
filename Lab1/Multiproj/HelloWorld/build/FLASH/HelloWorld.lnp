@@ -1,0 +1,5 @@
+--cpu Cortex-M3 ".\build\flash\startup_lpc17xx.o" ".\build\flash\system_lpc17xx.o" ".\build\flash\rtx_conf_cm.o" ".\build\flash\uart_polling.o" ".\build\flash\retarget.o" ".\build\flash\helloworld.o" N:\ECE254\Repo\lab1\starter\Multiproj\RTX_CM3\CM3_LE\RTX_CM3.lib 
+--strict --scatter ".\build\FLASH\HelloWorld.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\build\FLASH\lst\HelloWorld.map" -o .\build\FLASH\HelloWorld.axf

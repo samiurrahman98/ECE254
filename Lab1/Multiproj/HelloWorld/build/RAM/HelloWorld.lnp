@@ -1,0 +1,5 @@
+--cpu Cortex-M3 ".\build\ram\startup_lpc17xx.o" ".\build\ram\system_lpc17xx.o" ".\build\ram\rtx_conf_cm.o" ".\build\ram\uart_polling.o" ".\build\ram\retarget.o" ".\build\ram\helloworld.o" N:\ECE254\Repo\lab1\starter\Multiproj\RTX_CM3\CM3_LE\RTX_CM3.lib 
+--strict --scatter ".\build\RAM\HelloWorld.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\build\RAM\lst\HelloWorld.map" -o .\build\RAM\HelloWorld.axf

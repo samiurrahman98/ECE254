@@ -1,0 +1,59 @@
+1. Read the RTX Library Reference in the Keil IDE Help (see 1.12) and answer the following questions:
+1.1 (1 point) In an RTX application, how to declare a memory pool named "mympool" that has 20 blocks 
+    of memory with block size of 12 bytes?
+-----------------------------------------------------------------------------------------------------
+_declare_box(mympool, 12, 20)
+
+1.2 (1 point) Write one line of code to initialize the "mympool".
+-----------------------------------------------------------------------------------------------------
+_init_box(&mympool, sizeof(mympool), 12)
+
+1.3 (1 point) What is the corresponding kernel function of _alloc_box()?
+-----------------------------------------------------------------------------------------------------
+rt_alloc_box()
+
+1.4 (1 point) What is the corresponding kernel function of _free_box()?
+-----------------------------------------------------------------------------------------------------
+rt_free_box()
+
+2. (2 points) Read the rt_TypeDef.h file. What is the purpose of ret_val in the struct OS_TCB?
+-----------------------------------------------------------------------------------------------------
+The return value of a task after a wait, returning an OS_RESULT.
+
+3. Read the rt_List.c file and answer the following questions:
+    You may want to further explore other functions in the rt_List.c file.
+3.1 (2 points) What does the rt_put_prio() function do?
+-----------------------------------------------------------------------------------------------------
+Inserts a P_TCB task into a priority queue consisting of tasks sorted by descending priority starting from the head.
+
+3.2 (2 points) What does the rt_get_first() function do?
+-----------------------------------------------------------------------------------------------------
+Dequeues the priority queue, returning the head of the queue which is currently the highest priority task in the queue.
+
+4. Read the rt_Task.c file and answer the following questions:
+4.1 (2 points) What does the rt_block() function do?
+-----------------------------------------------------------------------------------------------------
+Blocks a running task for a specified timeout, and sets the task’s state to a given state. Switches context and runs the next ready task.
+
+4.2 (2 points) What does the rt_dispatch() function do?
+-----------------------------------------------------------------------------------------------------
+Dispatches the next task to run. If the next task has a high priority than the running task, the function switches context to run the next task and sets the running task to be the next task to run. Otherwise, the next task is put into the list of ready tasks, and execution of the running task proceeds normally. If there is no next_task to run, the function switches context and runs the next ready task. 
+
+5. (4 points) How to set the return value of a function becomes a bit tricky when context
+    switching is involved. One such example is os_mbx_wait() function. This function
+    will return OS_R_MBX if the task has waited until a message was put in the mailbox
+    (i.e. the task was blocked to wait for a message to arrive and then unblocked when
+    the message arrives). Read the rt_Mailbox.c file and find the lines where the return
+    value of OS_R_MBX is set. 
+    Why does the corresponding kernel function rt_mbx_wait()
+    not have a line to set the return value to OS_R_MBX? You may skip the code in
+    functions isr_mbx_receive() and rt_mbx_psh() for the purpose of completing this
+    assignment.
+-----------------------------------------------------------------------------------------------------
+When a task is waiting to send a message in rt_mb_wait() it is blocked. Its return value is not important because the task is blocked and cannot take any action until the operating system unblocks it. However, in rt_mb_send(), a task is unblocked and waiting for a message. The return value OS_R_MBX acts as a signal for this status on the assembly level so that the operating system is aware that an unblocked task is stalled and ready for action to be taken.
+
+6. (2 points) To block a task, you will need to create a queue that the blocked tasks
+    can stay. There are two global queues for now in the kernel and they are os_rdy and
+    os_dly. What data structure do these two queues use?
+-----------------------------------------------------------------------------------------------------
+struct OS_XCB
