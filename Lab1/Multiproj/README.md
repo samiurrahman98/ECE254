@@ -11,13 +11,12 @@
     <p><strong>OS_RESULT os_tsk_get (OS_TID task_id, RL_TASK_INFO *buffer)</strong></p>
    The primitive returns information about a task. The system call returns a rl_task_info
    structure , which contains the following fields:
-    <p><strong>typedef struct rl_task_info {
-    U8 state; /* Task state */
-    U8 prio; /* Execution priority */
-    U8 task_id; /* Task ID value for optimized TCB access */
-    U8 stack_usage; /* Stack usage percent value. eg.=58 if 58% */
-    void (*ptask)(); /* Task entry address */
-    26
+    <p><strong>typedef struct rl_task_info {<br>
+    U8 state; /* Task state */<br>
+    U8 prio; /* Execution priority */<br>
+    U8 task_id; /* Task ID value for optimized TCB access */<br>
+    U8 stack_usage; /* Stack usage percent value. eg.=58 if 58% */<br>
+    void (*ptask)(); /* Task entry address */<br>
     } RL_TASK_INFO;</strong></p>
    The state field describes the state of this task and is one of INACTIVE, READY,RUNNING,
    WAIT_DLY, WAIT_SEM, and WAIT_MUT. These states are described in details in the RLARM
@@ -31,8 +30,8 @@
    The function returns OS_R_OK on success and OS_R_NOK otherwise.
 
 3. Create five testing tasks to demonstrate that you have successfully implemented the
-   required primitives Your test tasks should do the following tests.
+   required primitives Your test tasks should do the following tests.<br>
    • One of the tasks calls the os_tsk_count_get primitive to test the number of
-     active tasks in the system returned by the function.
+     active tasks in the system returned by the function.<br>
    • One of the tasks periodically prints task status of each task in the system by
      calling the os_tsk_get primitive.
