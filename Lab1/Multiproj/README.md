@@ -12,11 +12,11 @@
    The primitive returns information about a task. The system call returns a rl_task_info
    structure , which contains the following fields:
     <p><strong>typedef struct rl_task_info {<br>
-    U8 state; /* Task state */<br>
-    U8 prio; /* Execution priority */<br>
-    U8 task_id; /* Task ID value for optimized TCB access */<br>
-    U8 stack_usage; /* Stack usage percent value. eg.=58 if 58% */<br>
-    void (*ptask)(); /* Task entry address */<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U8 state; /* Task state */<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U8 prio; /* Execution priority */<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U8 task_id; /* Task ID value for optimized TCB access */<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U8 stack_usage; /* Stack usage percent value. eg.=58 if 58% */<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void (*ptask)(); /* Task entry address */<br>
     } RL_TASK_INFO;</strong></p>
    The state field describes the state of this task and is one of INACTIVE, READY,RUNNING,
    WAIT_DLY, WAIT_SEM, and WAIT_MUT. These states are described in details in the RLARM
