@@ -18,8 +18,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U8 stack_usage; /* Stack usage percent value. eg.=58 if 58% */<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void (*ptask)(); /* Task entry address */<br>
     } RL_TASK_INFO;</strong></p>
-   The state field describes the state of this task and is one of INACTIVE, READY,RUNNING,
-   WAIT_DLY, WAIT_SEM, and WAIT_MUT. These states are described in details in the RLARM
+   The state field describes the state of this task and is one of INACTIVE, READY, RUNNING,
+   WAIT_DLY, WAIT_SEM, and WAIT_MUT. These states are described in details in the RL-ARM Real-Time Library User's Guide -> Theory of Operation -> Task Management section.
 
    The prio field describes the priority of this task.
    The task_id field describes the id of task assigned by the OS.
