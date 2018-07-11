@@ -2,7 +2,7 @@
 
 ### Deliverables
 1. Add a primitive to RL-RTX API to return the number of active tasks in the system.
-    <strong>int os_tsk_count_get (void);</strong>
+    <p><strong>int os_tsk_count_get (void);</strong></p>
    A task is considered active when its state is not set to INACTIVE in the TCB. The
    os idle task is a valid task that you should check the state as well.
    
