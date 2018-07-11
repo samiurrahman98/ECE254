@@ -8,17 +8,17 @@
    
 2. Implement a new primitive to obtain the task status information from the RTX at
    runtime given the task id. The function description is as follows.
-    <strong>OS_RESULT os_tsk_get (OS_TID task_id, RL_TASK_INFO *buffer)</strong>
+    <p><strong>OS_RESULT os_tsk_get (OS_TID task_id, RL_TASK_INFO *buffer)</strong></p>
    The primitive returns information about a task. The system call returns a rl_task_info
    structure , which contains the following fields:
-    <strong>typedef struct rl_task_info {
+    <p><strong>typedef struct rl_task_info {
     U8 state; /* Task state */
     U8 prio; /* Execution priority */
     U8 task_id; /* Task ID value for optimized TCB access */
     U8 stack_usage; /* Stack usage percent value. eg.=58 if 58% */
     void (*ptask)(); /* Task entry address */
     26
-    } RL_TASK_INFO;</strong>
+    } RL_TASK_INFO;</strong></p>
    The state field describes the state of this task and is one of INACTIVE, READY,RUNNING,
    WAIT_DLY, WAIT_SEM, and WAIT_MUT. These states are described in details in the RLARM
 
