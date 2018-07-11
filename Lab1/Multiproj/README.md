@@ -15,11 +15,11 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U8 stack_usage; /* Stack usage percent value. eg.=58 if 58% */<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void (*ptask)(); /* Task entry address */<br>
     } RL_TASK_INFO;</strong></p>
-   The state field describes the state of this task and is one of INACTIVE, READY, RUNNING, WAIT_DLY, WAIT_SEM, and WAIT_MUT.    These states are described in details in the RL-ARM Real-Time Library User's Guide -> Theory of Operation -> Task              Management section.
-   • The prio field describes the priority of this task.
-   • The task_id field describes the id of task assigned by the OS.
-   • The stack_usage describes how much stack space is used by this task. The value is the percent value. For example, if 58%      of this task stack is used, stack_usage is set to 58.
-   • The ptask field describes the entry address of this task function.
+   The state field describes the state of this task and is one of INACTIVE, READY, RUNNING, WAIT_DLY, WAIT_SEM, and WAIT_MUT.    These states are described in details in the RL-ARM Real-Time Library User's Guide -> Theory of Operation -> Task              Management section.<br>
+   • The prio field describes the priority of this task.<br>
+   • The task_id field describes the id of task assigned by the OS.<br>
+   • The stack_usage describes how much stack space is used by this task. The value is the percent value. For example, if 58%      of this task stack is used, stack_usage is set to 58.<br>
+   • The ptask field describes the entry address of this task function.<br>
    • The function returns OS_R_OK on success and OS_R_NOK otherwise.
 
 3. Create five testing tasks to demonstrate that you have successfully implemented the
