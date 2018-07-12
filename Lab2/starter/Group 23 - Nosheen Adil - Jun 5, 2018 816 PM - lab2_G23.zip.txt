@@ -1,0 +1,34 @@
+-5 Third Party Testing
+
+Calling os_sys_init()...
+Test1: allocating two memory blocks with blocking os_mem_alloc...
+Test1: OK
+Test2: freeing two memory blocks...
+Test2: OK
+TID     NAME            PRIO    STATE           %STACK
+1       init            1       READY           12%
+2       task1           5       WAIT_MEM        18%
+3       task2           4       RUNNING         12%
+4       task3           1       READY           12%
+5       task4           1       READY           12%
+6       task5           6       WAIT_SEM        12%
+255     os_idle_demon   0       READY           12%
+task2: TEST3: OK
+task1: TEST4: OK
+task1: B, about to block on MEM_WAIT...
+task1: TEST5 FAIL, blocking on memory task gets duplicated or invalid ptr(s)!
+             Terminating tests...
+ptr[0]=10001dd0
+ptr[1]=10001dc0
+ptr[2]=10001dc8
+ptr[3]=10001dc8
+Some tests are not completed!
+TID     NAME            PRIO    STATE           %STACK
+1       init            1       READY           12%
+2       task1           5       READY           18%
+3       task2           4       READY           12%
+4       task3           1       READY           12%
+5       task4           1       READY           12%
+6       task5           6       RUNNING         12%
+255     os_idle_demon   0       READY           12%
+g_result = 0xf
