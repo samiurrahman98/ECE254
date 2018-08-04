@@ -27,7 +27,7 @@ THe program terminates when the consumers have read all <strong>N</strong> numbe
 • <strong>C</strong> be the number of consumers.
 
 The producer/consumer system is called with the execution command:<br>
-     ./produce &lt;N&gt; &lt;Bgt; &lt;Pgt; &lt;Cgt;
+     ./produce &lt;N&gt; &lt;B&gt; &lt;P&gt; &lt;C&gt;
   
 The command will execute per the above description and will then print out the time it took to execute.
 
