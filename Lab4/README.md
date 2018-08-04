@@ -1,8 +1,8 @@
 ## Memory Management in a Linux Environment
 
-Implement two memory allocation algorithms: best fita nd worst fit, andp erform analysis to determine which is better.
+Implement two memory allocation algorithms: best fit and worst fit, and perform analysis to determine which is better.
 
-For each algorithm, a memory initialization function is implemented, which requests a chunk of free memory dynamically from the system to be managed by different allocation algorithms. Then, an allocation and deallocation function are implemented. One utility function is also to be implemented to help analyze the fficiency of the allocation algorithm and its implementation. A series of tests is then to be written to test the correctness of the implementations.
+For each algorithm, a memory initialization function is implemented, which requests a chunk of free memory dynamically from the system to be managed by different allocation algorithms. Then, an allocation and deallocation function are implemented. One utility function is also to be implemented to help analyze the efficiency of the allocation algorithm and its implementation. A series of tests is then to be written to test the correctness of the implementations.
 
 ### Memory initialization functions:
 #### Synopsis
@@ -13,9 +13,9 @@ For each algorithm, a memory initialization function is implemented, which reque
 #### Description
 These functions initialize the system with a single block of memory. The name of the function indicates the allocation algorithm to be used. They will always initialize the system as if no memory has been allocated (i.e., all memory is free). The input parameter <strong>size</strong> is the memory size in bytes.
 
-You are to use the <strong>malloc()</strong> funciton inside the initialization function to acquire a chunk of memory of size bytes and then initialize your own memory allocator data structure based on the memory allocation algorithm. Note that <strong>malloc()</strong> can only be used in the initialization function implementation once to request the memory to be managed by your allocator and de-allocator from the system. It should not be used in other places in the code. Instead, you need to implement your own version of allocator without the need of calling <strong>malloc()</strong> again.
+You are to use the <strong>malloc()</strong> function inside the initialization function to acquire a chunk of memory of <strong>size</strong> bytes and then initialize your own memory allocator data structure based on the memory allocation algorithm. Note that <strong>malloc()</strong> can only be used in the initialization function implementation once to request the memory to be managed by your allocator and de-allocator from the system. It should not be used in other places in the code. Instead, you need to implement your own version of allocator without the need of calling <strong>malloc()</strong> again.
 
-<strong>Any memory used for tracking the amount of memory that is either free or allocated will be inside the block of memory that the allocatio nalgorithms are resposible for managing.</strong>
+<strong>Any memory used for tracking the amount of memory that is either free or allocated will be inside the block of memory that the allocation algorithms are resposible for managing.</strong>
 #### Return Value
 These functions return 0 on success and -1 on failure.
 
