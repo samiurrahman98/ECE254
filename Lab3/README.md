@@ -20,7 +20,6 @@ Further, if any given producer or consumer is using the buffer, all other consum
 THe program terminates when the consumers have read all <strong>N</strong> numbers from the producers and finish displaying all square roots that are integers. Note that there is a subtle but complex issue to solve: there are multiple consumers that are reading from the buffer, and thus a mechanisms needs to be established to determine whether or not some consumer has read the last integer (we need this in order to terminate each consumer process).
 
 ### Requirements
-
 • Let <strong>N</strong> be the number of integers the producers should produce in total,<br>
 • <strong>B</strong> be the buffer size,<br>
 • <strong>P</strong> be the number of producers and<br>
